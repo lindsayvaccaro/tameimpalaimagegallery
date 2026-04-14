@@ -20,10 +20,11 @@ body {
     padding: 32px;
     display: flex;
     flex-direction: row;
+    background-image: url(../images/the-texture-of-the-black-fabric-has-a-vintage-dullness-cloth-black-there-is-a-text-area-for-the-background-used-for-vintage-wallpapers-and-designs-free-photo.jpg);
 }
 
 h1 {
-    text-shadow: 50px;
+    text-shadow: 50px black;
 }
 
 .header img {
@@ -48,6 +49,20 @@ h1 {
     vertical-align: middle;
 }
 
+footer {
+    height: 50px;
+    background-image: url(../images/the-texture-of-the-black-fabric-has-a-vintage-dullness-cloth-black-there-is-a-text-area-for-the-background-used-for-vintage-wallpapers-and-designs-free-photo.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cornerBtn {
+    display: none;
+    position: fixed;
+
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column {
@@ -60,6 +75,9 @@ h1 {
 @media screen and (max-width: 600px) {
     .column {
         flex: 100%;
+        max-width: 100%;
+    }
+    .column img {
         max-width: 100%;
     }
 }
